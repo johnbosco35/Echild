@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import bg from "../../assets/image-3.jpg"
+import { NavLink } from "react-router-dom"
 
 const Register = () => {
   return (
@@ -20,9 +21,9 @@ const Register = () => {
             <input type="text" placeholder="password" required/>
           </Box>
           <Button>Register</Button>
-          <div style={{display:"flex",alignItems:"center",justifyContent:"center",fontSize:"20px",fontWeight:"800"}}>
-            <span>Already have an account ?</span>
-            <pre>Signin</pre>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"center",fontSize:"20px",fontWeight:"800",marginTop:"15px"}}>
+            <span>Already have an account?</span>
+            <NavLink to={"/login"} style={{textDecoration:"none",color:"white",marginLeft:"10px"}}>Signin</NavLink>
           </div>
           </Cover>
       </Container>
