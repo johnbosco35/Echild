@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from "../../assets/image-3.jpg"
+import bg from "../../assets/1.jpg"
 import { NavLink } from "react-router-dom"
 
 const LogIn = () => {
