@@ -1,6 +1,4 @@
 import { styled } from "styled-components";
-// import pics from "../assets/john.jpg";
-import cv from "../assets/Okonkwo JohnBosco Onyedikachi.pdf";
 import img from "../assets/banner_01.jpg"
 
 const Hero = () => {
@@ -24,9 +22,9 @@ const Hero = () => {
             A Professional Full stack Developer (MERN stack). Strong attention
             to small details.
           </p>
-          <a href={cv} download="resume">
+          {/* <a href={cv} download="resume"> */}
             <Button>Download cv</Button>
-          </a>
+          {/* </a> */}
         </Left>
         {/* <Right>
           <img src={pics} alt="Finbarr's Image" />
