@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import pics from "../assets/john.jpg";
 import cv from "../assets/Okonkwo JohnBosco Onyedikachi.pdf";
+import img from "../assets/banner_01.jpg"
 
 const Hero = () => {
   return (
@@ -27,9 +28,9 @@ const Hero = () => {
             <Button>Download cv</Button>
           </a>
         </Left>
-        <Right>
+        {/* <Right>
           <img src={pics} alt="Finbarr's Image" />
-        </Right>
+        </Right> */}
       </Wrapper>
     </Container>
   );
@@ -144,6 +145,10 @@ const Container = styled.div`
   height: calc(100vh - 60px);
   background-color: #f5f5f5;
   display: flex;
+  background-image: url(${img});
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
   /* align-items: center; */
   justify-content: center;
 

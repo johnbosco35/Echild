@@ -1,7 +1,14 @@
+import { About, Contact, Hero, Portfolio, Services } from "../../Components"
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
+    <>
+       <Hero/> 
+       <About/>
+       <Services/>
+       <Portfolio/>
+       <Contact/>
+    </>
   )
 }
 

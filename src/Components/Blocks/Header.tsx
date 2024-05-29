@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai";
+import img from "../../assets/EChild.png"
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   
@@ -68,26 +70,20 @@ const Header: React.FC = () => {
                 offset={-50}
                 onClick={Toogle}
               >
-                <p>Portfolio</p>
+                <p>Our Teams</p>
               </Link>
-              <Link
-                style={{ width: "100%" }}
-                to="contact"
-                duration={500}
-                smooth={true}
-                offset={-50}
+              <NavLink
+                style={{ width: "100%",textDecoration:"none",fontSize:"25px",fontWeight:"600", fontFamily:"cursive" }}
+                to="/register"
                 onClick={Toogle}
               >
-                <p style={{ borderBottom: "none" }}>Contact</p>
-              </Link>
+                <p style={{ borderBottom: "none" }}>Register</p>
+              </NavLink>
             </Drop>
           ) : null}
           <Wrapper>
             <Left>
-              <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>J</span>
-                ohnBosco
-              </h2>
+           <img src={img} alt="EChild..." />
             </Left>
             <Right>
               <Link to="home" duration={500} smooth={true} offset={-50}>
@@ -100,11 +96,11 @@ const Header: React.FC = () => {
                 <nav>Services</nav>
               </Link>
               <Link to="portfolio" duration={500} smooth={true} offset={-50}>
-                <nav>Portfolio</nav>
+                <nav>Our Teams</nav>
               </Link>
-              <Link to="contact" duration={500} smooth={true} offset={-50}>
-                <nav>Contact</nav>
-              </Link>
+              <NavLink to="/register" style={{textDecoration:"none",fontSize:"25px",fontWeight:"600", fontFamily:"cursive"}}>
+                <nav>Register</nav>
+              </NavLink>
             </Right>
             <Icon size={26} onClick={Toogle} />
           </Wrapper>
@@ -152,26 +148,20 @@ const Header: React.FC = () => {
                 offset={-50}
                 onClick={Toogle}
               >
-                <p>Portfolio</p>
+                <p>Our Teams</p>
               </Link>
-              <Link
-                style={{ width: "100%" }}
-                to="contact"
-                duration={500}
-                smooth={true}
-                offset={-50}
+              <NavLink
+                style={{ width: "100%",textDecoration:"none",fontSize:"25px",fontWeight:"600", fontFamily:"cursive" }}
+                to="/register"
                 onClick={Toogle}
               >
-                <p style={{ borderBottom: "none" }}>Contact</p>
-              </Link>
+                <p style={{ borderBottom: "none" }}>Register</p>
+              </NavLink>
             </Drop>
           ) : null}
           <Wrapper>
             <Left>
-              <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>J</span>
-                ohnBosco
-              </h2>
+            <img src={img} alt="EChild..." />
             </Left>
             <Right>
               <Link to="home" duration={500} smooth={true} offset={-50}>
@@ -184,11 +174,11 @@ const Header: React.FC = () => {
                 <nav>Services</nav>
               </Link>
               <Link to="portfolio" duration={500} smooth={true} offset={-50}>
-                <nav>Portfolio</nav>
+                <nav>Our Teams</nav>
               </Link>
-              <Link to="contact" duration={500} smooth={true} offset={-50}>
-                <nav>Contact</nav>
-              </Link>
+              <NavLink to="/register" style={{textDecoration:"none",fontSize:"25px",fontWeight:"600", fontFamily:"cursive"}} >
+                <nav>Register</nav>
+              </NavLink>
             </Right>
             <Icon size={26} onClick={Toogle} />
           </Wrapper>
@@ -238,6 +228,10 @@ const Icon = styled(AiOutlineMenu)`
 `;
 
 const Left = styled.div`
+
+img{
+  height: 80px;
+}
   h2 {
     font-size: 35px;
   }
@@ -260,7 +254,7 @@ const Right = styled.div`
 
 const Container = styled.div<{ bg: string }>`
   width: 100%;
-  height: 60px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Projects } from "../pages/common";
 import gift from "../assets/GiftCards.jpg";
-import doc from "../assets/sics.jpg";
+// import doc from "../assets/sics.jpg";
 import fur from "../assets/fur.jpg";
 import App from "../assets/Appointment site.png"
 import Quiz from "../assets/Quiz app.png"
@@ -21,7 +21,7 @@ const Portfolio = () => {
         />
         <Projects
           title="LyfeCare- Platform to save for health emergencies"
-          image={doc}
+          // image={doc}
           link="https://lyfecare.netlify.app/"
           desc="Lyfecare is a transformative platform designed to empower users to save and prepare for health emergencies proactively. The project offers a secure and user-friendly platform that encourages individuals to set aside funds specifically for healthcare-related expenses."
         />
