@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import pics from "../assets/john.jpg";
+// import pics from "../assets/john.jpg";
 import cv from "../assets/Okonkwo JohnBosco Onyedikachi.pdf";
 import img from "../assets/banner_01.jpg"
 
@@ -38,46 +38,46 @@ const Hero = () => {
 
 export default Hero;
 
-const Right = styled.div`
-  width: 450px;
-  height: 480px;
-  /* background-color: gold; */
-  margin-left: 50px;
-  margin-bottom: 90px;
-  margin-top: 30px;
-  opacity: 0;
-  animation: slideInFromRight 1s ease-in-out 0.5s forwards;
+// const Right = styled.div`
+//   width: 450px;
+//   height: 480px;
+//   /* background-color: gold; */
+//   margin-left: 50px;
+//   margin-bottom: 90px;
+//   margin-top: 30px;
+//   opacity: 0;
+//   animation: slideInFromRight 1s ease-in-out 0.5s forwards;
 
-  @keyframes slideInFromRight {
-    from {
-      opacity: 0;
-      margin-left: 100%; /* Start position outside the right edge */
-    }
-    to {
-      opacity: 1;
-      margin-left: 50px; /* End position */
-    }
-  }
+//   @keyframes slideInFromRight {
+//     from {
+//       opacity: 0;
+//       margin-left: 100%; /* Start position outside the right edge */
+//     }
+//     to {
+//       opacity: 1;
+//       margin-left: 50px; /* End position */
+//     }
+//   }
 
-  @media screen and (max-width: 500px) {
-    width: 100%;
-    height: 250px;
-    margin: 0;
-    margin-top: 30px;
-    animation: none;
-    opacity: 1;
-  }
+//   @media screen and (max-width: 500px) {
+//     width: 100%;
+//     height: 250px;
+//     margin: 0;
+//     margin-top: 30px;
+//     animation: none;
+//     opacity: 1;
+//   }
 
-  @media screen and (min-width: 700px) and (max-width: 1000px) {
-    width: 80%;
-    height: 80%;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
+//   @media screen and (min-width: 700px) and (max-width: 1000px) {
+//     width: 80%;
+//     height: 80%;
+//   }
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// `;
 
 const Button = styled.button`
   width: 170px;
